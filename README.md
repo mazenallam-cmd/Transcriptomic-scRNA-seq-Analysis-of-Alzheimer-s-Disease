@@ -62,26 +62,8 @@ Cells are grouped into clusters based on transcriptional similarity using graph-
 
 Differential expression analysis is conducted to identify genes that are significantly upregulated or downregulated between Alzheimer's disease samples and control samples within specific age intervals.
 
-### 8. Data Visualization
 
-Heatmaps are generated to visualize the expression patterns of differentially expressed genes across conditions and age groups.
 
-## Repository Structure
-
-```
-Transcriptomic_ScRNA_analysis
-│
-├── DE_per_age_interval_AD_vs_CTRL
-│   ├── Heatmaps_DE_genes_Age_60_70.pdf
-│
-├── scripts
-│   └── analysis_pipeline.R
-│
-├── results
-│   └── differential_expression_results
-│
-└── README.md
-```
 
 ## Key Outputs
 
@@ -103,7 +85,6 @@ The analysis pipeline uses the following tools:
 * **Seurat**
 * R programming language
 * Single-cell transcriptomics analysis workflows
-* Heatmap visualization methods
 
 ## Future Work
 
@@ -118,7 +99,7 @@ Future improvements to this project may include:
 ## Author
 
 Mazen Allam
-Biotechnology Student – Cairo University
+Biotechnology Student – Cairo University      
 Junior Bioinformatician interested in transcriptomics, neuroscience, and data-driven biological research.
 
 
