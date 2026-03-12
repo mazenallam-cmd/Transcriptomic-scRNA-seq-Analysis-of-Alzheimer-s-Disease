@@ -350,12 +350,8 @@ for (interval in names(de_age_results)) {
       slice_head(n = top_n_genes_age) %>%
       pull(gene)
     
-    # Keep only genes present in the Seurat object
-    valid_genes <- top_genes[top_genes %in% rownames(Fsn_obj)]
-    
    
-    
-    # Subset the Seurat object to the age interval and cell type
+    valid_genes <- top_genes[top_genes %in% rownames(Fsn_obj)]
     cells_subset <- subset(Fsn_obj, subset = age_interval == interval)
     cells_subset <- subset(cells_subset, idents = cell_type)
    
@@ -370,6 +366,7 @@ for (interval in names(de_age_results)) {
   
   dev.off()
 }
+
 
 
 
